@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)file:///E:/Software/Bootstrap/04/btn.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Required meta tags -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="header" style="background-color: #000;">
+    <a class="navbar-brand" href="#">Gokart</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="">HOME<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          SHOP
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#"></a>
+            <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us!<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">LOG IN<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#signupModal">SIGN UP<span class="sr-only"></span></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <div class="container" style="text-align:center">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+        </div>
+      </form>
+    </div>
+      <form class="form-inline my-2 my-lg-0" action="" method="post">
+        <a href=""><img src="carticon1.png" style="height:40px; width:40px; margin-right: 10px;  " alt=""></a>
+      </form>
+        <a href=""><img src="usericon.png" style="height:40px; width:40px; margin-right: auto; " alt=""></a>
+  </nav>
+
+  <!-- LOGIN Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Welcome To Gokart!!!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form class=""  method="post" onsubmit="return validate();" action="login.html">
+          <div class="modal-body">
+            <span>Mobile No.</span>
+            <input type="text" class="form-control" id="mobile" name="mobile">
+            <span>Password</span>
+            <input type="password" class="form-control" id="password" name="password">
+          </div>
+          <div class="modal-footer">
+              <button type="submit" id="submit" name="submit" class="btn btn-primary" style="width:150px;">Log In</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+
+<!-- SIGNUP Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Welcome To Gokart!!!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form class="" action="login.html" method="post" onsubmit="return signupValidate();">
+          <div class="modal-body">
+            <span>Name</span>
+            <input type="text" class="form-control" id="signupName" name="signupName">
+            <span>Email</span>
+            <input type="text" class="form-control" id="signupEmail" name="signupEmail">
+            <span>Mobile No.</span>
+            <input type="text" class="form-control" id="signupMobile" name="signupMobile">
+            <span>Password</span>
+            <input type="password" class="form-control" id="signupPassword" name="signupPassword">
+          </div>
+          <div class="modal-footer">
+              <button type="submit" class="btn btn-primary" style="width:150px;">Sign Up</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="validate.js" ></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" ></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" ></script>
+
+</body></html>
